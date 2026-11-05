@@ -1,39 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Placeholder for the IOU Corp DMCA Policy.">
-  <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#e54525">
-  <title>DMCA Policy | IOU Corp</title>
-  <style>
-    :root { color-scheme: light; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; background: #f8f9fb; color: #1f2937; display: flex; flex-direction: column; }
-    header, footer { width: min(100%, 1040px); margin-inline: auto; padding-inline: 24px; }
-    header { padding-block: 28px; font-weight: 800; letter-spacing: .03em; }
-    header .mark { display: inline-block; width: 10px; height: 10px; margin-right: 9px; background: #e54525; border-radius: 2px; }
-    main { width: min(100% - 36px, 760px); margin: auto; padding: 52px 0 74px; }
-    .panel { background: white; border: 1px solid #e5e7eb; border-radius: 18px; padding: clamp(30px, 6vw, 64px); box-shadow: 0 14px 40px rgb(17 24 39 / 5%); }
-    .eyebrow { color: #b83c22; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; font-size: .75rem; }
-    h1 { margin: 12px 0 18px; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.14; letter-spacing: -.035em; }
-    p { font-size: 1.05rem; line-height: 1.7; margin: 0; color: #4b5563; }
-    .notice { margin-top: 32px; padding: 16px 20px; border-left: 3px solid #e54525; border-radius: 0 8px 8px 0; background: #fff7f4; font-size: .95rem; line-height: 1.55; color: #663c33; }
-    footer { border-top: 1px solid #e5e7eb; padding-block: 22px; color: #6b7280; font-size: .85rem; }
-    @media (max-width: 480px) { header { padding-block: 20px; } main { padding: 32px 0 50px; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Digital Millennium Copyright Act (DMCA) Policy for IOU Corp. Last updated as of March 10, 2026.">
+<meta name="theme-color" content="#17243a">
+<title>Digital Millennium Copyright Act (DMCA) Policy | IOU Corp</title>
+<style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--ink:#1f2a3c;--muted:#627082;--line:#e1e6ec;--accent:#e54525;--accent-dark:#b93018}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f7f9fb;color:var(--ink)}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid #f28a70;outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;left:-10000px;top:8px;z-index:10;background:#fff;padding:12px}
+.skip-link:focus{left:12px}
+.topbar{background:#fff;border-bottom:1px solid var(--line)}
+.topbar-inner{width:min(1140px,calc(100% - 40px));margin:auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-icon{display:grid;place-items:center;width:42px;height:42px;background:var(--accent);color:#fff;font-size:14px;border-radius:10px;font-weight:850}
+.brand-name{font-size:18px;display:block;font-weight:800;line-height:1.15}
+.brand-subtitle{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.portals{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-end;font-size:13px}
+.portals a{color:#5d6977;text-underline-offset:4px}
+.portals a:hover{color:var(--accent-dark)}
+.hero{background:linear-gradient(115deg,#17243a,#273d55)}
+.hero-inner{width:min(1140px,calc(100% - 40px));margin:auto;padding:33px 0}
+.hero-label{color:#ffb49f;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.hero h2{margin:9px 0 0;color:#fff;font-size:clamp(24px,3.2vw,36px);letter-spacing:-.03em}
+.layout{width:min(1140px,calc(100% - 40px));margin:30px auto 70px;display:grid;grid-template-columns:250px minmax(0,1fr);align-items:start;gap:25px}
+.sidebar{position:sticky;top:18px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:20px 15px;box-shadow:0 8px 30px rgba(20,35,55,.035)}
+.sidebar-title{margin:3px 10px 16px;font-size:11px;font-weight:800;letter-spacing:.11em;color:#8b96a5}
+.sidebar details{border-top:1px solid #edf0f4;padding:12px 0}
+.sidebar details:first-of-type{border-top:0}
+.sidebar summary{cursor:pointer;font-size:13px;font-weight:800;list-style:none;color:#344258;display:flex;align-items:center;justify-content:space-between;padding:8px 10px}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary::after{content:"";width:7px;height:7px;border-right:2px solid #8793a3;border-bottom:2px solid #8793a3;transform:rotate(45deg)}
+.sidebar details[open] summary::after{transform:rotate(225deg)}
+.side-links{display:grid;gap:3px;padding:5px 0 0}
+.side-links a{display:block;color:#506077;text-decoration:none;font-size:13px;padding:10px 10px 10px 13px;border-radius:8px;border-left:3px solid transparent;line-height:1.4}
+.side-links a:hover,.side-links a:focus-visible{background:#fff3ed;color:#963b26;border-left-color:var(--accent)}
+.side-links a.active{background:#fff0e9;color:#a13720;font-weight:800;border-left-color:var(--accent)}
+.sidebar-footer{padding:16px 9px 3px;border-top:1px solid #edf0f4;font-size:12px}
+.sidebar-footer a{color:#566679;text-underline-offset:3px}
+.legal-document{min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(26px,4.5vw,55px);box-shadow:0 10px 35px rgba(20,35,55,.045)}
+.document-category{font-size:11px;letter-spacing:.12em;color:#b33b23;font-weight:800;text-transform:uppercase}
+.legal-document h1{font-size:clamp(28px,3.5vw,41px);letter-spacing:-.035em;line-height:1.19;margin:11px 0 9px}
+.document-date{color:#667487;font-size:13px;margin:0 0 29px}
+.legal-copy{border-top:1px solid #e5e9ee;padding-top:24px;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#344155;overflow-wrap:anywhere}
+.legal-copy h2{font-size:20px;line-height:1.35;letter-spacing:-.01em;margin:35px 0 12px;color:#263648}
+.legal-copy h3{font-size:16px;line-height:1.45;margin:24px 0 9px;color:#263648}
+.legal-copy p{margin:0 0 16px;font-size:14.5px;line-height:1.79}
+.legal-copy p.clause{margin-left:12px}
+.doc-end{margin-top:37px;padding-top:20px;border-top:1px solid #e9edf1;color:#7c8795;font-size:12px}
+footer{border-top:1px solid var(--line);text-align:center;color:#778396;font-size:12px;padding:25px 20px 30px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.sidebar{position:static}.hero-inner{padding:29px 0}.topbar-inner{min-height:70px}.portals{gap:8px;font-size:12px}}
+@media(max-width:490px){.topbar-inner,.hero-inner,.layout{width:min(100% - 28px,1140px)}.portals{flex-direction:column;align-items:flex-end;gap:4px}.brand-name{font-size:16px}.brand-icon{width:38px;height:38px}.layout{margin-top:17px}.legal-document{padding:23px 19px}.legal-copy p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <header><span class="mark" aria-hidden="true"></span>IOU Corp</header>
-  <main>
-    <section class="panel" aria-labelledby="page-title">
-      <div class="eyebrow">Document placeholder</div>
-      <h1 id="page-title">DMCA Policy</h1>
-      <p>IOU Corp's Digital Millennium Copyright Act (DMCA) Policy will be published here once the document is finalized.</p>
-      <div class="notice"><strong>Not yet published.</strong> This is a placeholder page, not the finalized DMCA Policy.</div>
-    </section>
-  </main>
-  <footer>&copy; 2026 IOU Corp</footer>
+<a class="skip-link" href="#legal-document">Skip to policy text</a>
+<header class="topbar">
+<div class="topbar-inner">
+<a class="brand" href="https://iou-corp.github.io/business-docs-c/"><span class="brand-icon" aria-hidden="true">IOU</span><span><span class="brand-name">IOU Corp</span><span class="brand-subtitle">Legal &amp; Policy Center</span></span></a>
+<nav class="portals" aria-label="Legal document portals"><a href="https://iou-corp.github.io/business-docs-c/">Cannabis business documents</a><a href="https://iou-corp.github.io/business-docs/">General business documents</a></nav>
+</div></header>
+<section class="hero" aria-label="Policy library"><div class="hero-inner"><div class="hero-label">Shared legal document</div><h2>Legal documents &amp; policies</h2></div></section>
+<div class="layout">
+<aside class="sidebar" aria-label="Document navigation">
+<div class="sidebar-title">BROWSE DOCUMENTS</div>
+<nav aria-label="Policy pages"><details open><summary>Cannabis business policies</summary><div class="side-links"><a href="https://iou-corp.github.io/business-terms-of-service-c/">Terms of Service</a>
+<a href="https://iou-corp.github.io/business-privacy-policy-c/">Privacy Policy</a>
+<a href="https://iou-corp.github.io/iou-business-disclaimer-c/">Disclaimer</a></div></details>
+ <details open><summary>General business policies</summary><div class="side-links"><a href="https://iou-corp.github.io/business-terms-of-service/">Terms of Service</a>
+<a href="https://iou-corp.github.io/business-privacy-policy/">Privacy Policy</a>
+<a href="https://iou-corp.github.io/iou-business-disclaimer/">Disclaimer</a></div></details>
+ <details open><summary>Shared documents</summary><div class="side-links"><a href="https://iou-corp.github.io/dmca/" aria-current="page" class="active">DMCA Policy</a></div></details></nav>
+<div class="sidebar-footer"><a href="https://iou-corp.github.io/business-docs-c/">All cannabis business documents</a><p><a href="https://iou-corp.github.io/business-docs/">All general business documents</a></p></div>
+</aside>
+<main>
+<article class="legal-document" id="legal-document" data-document="dmca">
+<div class="document-category">Shared Policy</div>
+<h1>Digital Millennium Copyright Act (DMCA) Policy</h1>
+<p class="document-date">Last updated as of March 10, 2026</p>
+<div class="legal-copy" id="legal-copy">
+<p>IOU Corp is committed to complying with intellectual property laws and expects its users to uphold the same standards. Users transacting on IOU Corp’s platform are responsible for ensuring they possess all necessary rights to their posted content and that their postings do not infringe upon or violate the rights of any third party. In compliance with the Digital Millennium Copyright Act (DMCA), we have established this DMCA Policy to address alleged copyright infringements related to content posted on IOU Corp platforms. This policy outlines the procedures for reporting copyright violations and how we handle such reports. The information contained on this page constitutes information and not legal advice. You assume all responsibility for any and all use of this information. Please consult an attorney before taking any action that might impact your rights.</p>
+<h2 id="section-2">Reporting Copyright Infringement</h2>
+<p>If you are a copyright owner or authorized to act on behalf of one, you can report alleged copyright infringement on IOU Corp platforms by submitting a valid DMCA Notice of Claimed Infringement Form (“DMCA Notice”) to our Copyright Agent via:</p>
+<p>Email: help@iwantchips.com</p>
+<p>Mailing Address:</p>
+<p>Attn: Copyright Agent IOU Corp</p>
+<p>8547 E Arapahoe Rd J-366</p>
+<p>Greenwood Village, CO 80112 Your DMCA Notice must include all of the following information:</p>
+<p class="clause">1. An electronic or physical signature of the copyright owner or a person authorized to act on their behalf;</p>
+<p class="clause">2. A description of the copyrighted work that you claim has been infringed;</p>
+<p class="clause">3. The URL(s) or location(s) on our platform where the infringing material is located;</p>
+<p class="clause">4. Your full legal name, mailing address, telephone number, and email address;</p>
+<p class="clause">5. Verify these statements by including, and adding your name to, the following affidavit:</p>
+<p class="clause">a. I, &lt;your full name&gt;, wish to state that:</p>
+<p class="clause">i. I have a good faith belief that the use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law;</p>
+<p class="clause">ii. This notification is accurate; and</p>
+<p class="clause">iii. Under penalty of perjury, I am the owner, or an agent authorized to act on behalf of the owner of an exclusive right that is allegedly infringed. Please note that a copy of your DMCA Notice, including your contact information, may be provided to the user who posted the content. IOU Corp may request additional information before processing your DMCA Notice, such as a letter of authorization from the rights owner, identity verification of the reporting party, or other documentation regarding the claimed right. IOU Corp may reject reports of infringement that contain information we believe to be false, fraudulent, or otherwise submitted in bad faith.</p>
+<h2 id="section-18">Submitting a Counter-Notice</h2>
+<p>If IOU Corp removes your content based on a DMCA Notice, and you believe that your content was removed in error, you may submit a counter-notice to our Copyright Agent via the contact information provided above. Note that there may be legal consequences if you submit a counter-notice. Please consult your own legal advisor(s) for more information. Your counter-notice must include all of the following:</p>
+<p class="clause">1. Your physical or electronic signature;</p>
+<p class="clause">2. Identification of the material that has been removed, along with the URL(s) or location(s) where it appeared before removal;</p>
+<p class="clause">3. Your full legal name, mailing address, telephone number, and email address;</p>
+<p class="clause">4. Verify these statements by including, and adding your name to, the following affidavit:</p>
+<p class="clause">a. I, &lt;your full name&gt;, wish to state that:</p>
+<p class="clause">i. I consent to the jurisdiction of the Federal District Court for the judicial district in which my address is located, or if my address is outside of the United States, the judicial district in which IOU Corp may be found, and will accept service of process from the claimant.</p>
+<p class="clause">ii. I swear, under penalty of perjury, that I have a good faith belief that the material identified in the notification was identified, removed, and/or disabled as a result of mistake or misidentification. Please note that a copy of your counter-notice, including your contact information, may be provided to the user who submitted the original DMCA Notice.</p>
+<h2 id="section-27">Repeat Infringement</h2>
+<p>If you continue to post infringing material or repost content that has been reported and taken down by IOU Corp, you may face additional actions, up to and including account suspension or termination. IOU Corp reserves the right to suspend or terminate accounts at its discretion.</p>
+</div>
+<div class="doc-end">IOU Corp &middot; Shared legal policy</div>
+</article>
+</main>
+</div>
+<footer>&copy; 2026 IOU Corp. All rights reserved.</footer>
 </body>
 </html>
